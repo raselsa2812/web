@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.phone-info {
+    border-bottom: 1px solid rgb(171, 159, 159);
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+
+.phone-info a {
+    text-decoration: none;
+    color: rgb(14, 17, 18);
+
+
+}
+
+.phone-info a:hover {
+    background-image: none;
+}
+
+.phone-info .sep {
+    font-weight: bold;
+    color: rgb(14, 11, 11);
+
+}
+
+nav {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fa-brands {
+    color: rgb(238, 233, 227);
+    font-size: 25px;
+    letter-spacing: 20px;
+    cursor: pointer;
+}
+
+.button .scroll {
+    margin-left: 50%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    color: #e0e2e4;
+
+}
+
+.button .scroll:hover {
+    background-image: none;
+}
+
+.now {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.name {
+
+    margin-top: none;
+    padding-bottom: 20px;
+}
+
+nav h2 {
+    color: antiquewhite;
+    margin-top: 80px;
+    text-align: center;
+    letter-spacing: 30px;
+
+}
+
+nav p {
+    color: rgb(13, 246, 234);
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+}
+
+label.logo {
+    color: white;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: rgb(218, 138, 10);
+    box-shadow: 10px 10px #999;
+    margin-left: 80px;
+
+}
+
+.logo:hover {
+    color: #2c3e50;
+    transition: 0.3s;
+}
+
+nav ul {
+    float: right;
+    margin-right: 200px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-image: linear-gradient(orange, rgb(45, 26, 12));
+    transition: .5s;
+    padding: 4px 15px;
+    border-radius: 3px;
+
+}
+
+ul i:hover {
+    opacity: 0.7;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn:hover {
+    color: darkgray;
+}
+
+#check {
+    display: none;
+}
+
+/* Part 2 */
+@media(max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+
+
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+
+    }
+
+    .phone-info {
+        text-align: center;
+    }
+
+    .button .scroll {
+        margin-left: 20px;
+    }
+
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgb(74, 24, 24), chocolate);
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        border-radius: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav .name {
+        text-align: center;
+    }
+}
